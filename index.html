@@ -36,6 +36,9 @@
                     <!--Clonar lo mas popular-->
 
                 </div>
+                <div class="movieDetails" id="movieDetails">
+                    <!--Detalle de la pelicula-->
+                </div>
             </div>
         </section>
         <section class="link"></section>
@@ -44,11 +47,44 @@
 
     <!--Templates a utilizar-->
     <template id="imgPopular">
-        <a href="">
-            <img src="" alt="">
-        </a>
+        <div class="card">
+            <img src="" alt="imagen no disponible" style="width: 100%; height: 180px;">
+            <p style="text-align: center; padding: 0; margin: 0; color: white;">Titulo</p>
+             <button class="btnCard">More Info</button>
+        </div>
     </template>
-
+    <!--Template de detalles-->
+    <template id="cardDetails">
+        <div style="display: flex;">
+            <div class="poster" style="margin-left: 30px;">
+                <div><button class="btnRegresar"><i class="fa-solid fa-arrow-left"></i></button></div>
+                <div style="margin-top: 20px;"><img src="" alt="imagen no disponible" style="width: auto; height: 210px;"></div>
+            </div>
+            <div class="info" style="margin-left:100px;">
+                <div style="display: flex;">
+                    <div><img src="./assets/images/nlogo.png" alt="N" style="height: 50px; width:50px;"></div>
+                    <div><p>P E L I C U L A</p></div>
+                </div>
+                <h1 class="titulo" style="margin-top: -25px;">Titulo</h1>
+                <div style="display:flex;margin-top: -20px;">
+                    <div><p class="date">Fecha de lanzamiento</p></div> &nbsp;&nbsp;
+                    <div><p class="tipo"></p></div>&nbsp;&nbsp;
+                    <div><p class="genero">genero</p></div>
+                </div>
+                <div style="width: 500px; height:auto;"><p class="description">sinopsis</p></div>
+                <button class="play"><i class="fa-solid fa-play" style="color: white;"></i> Reproducir</button>
+                <button class="myList"><i class="fa-solid fa-plus"></i> Mi lista</button>
+                <button class="like"><i class="fa-solid fa-thumbs-up"></i></button>
+                <button class="dislike"><i class="fa-solid fa-thumbs-down"></i></button>
+                <div style="display: flex;">
+                    <div><p>A %</p></div>
+                    <div><p class="rating"> </p></div>&nbsp;
+                    <div><p>les gusto</p></div>
+                </div>
+                <div>Ver trailer: <p class="trailer"></p></div>
+            </div>
+        </div>
+    </template>
     <script src="./javascript/app.js"></script>
   </body>
 </html>
